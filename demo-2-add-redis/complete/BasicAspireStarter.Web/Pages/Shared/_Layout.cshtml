@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Basic Aspire Starter</title>
+    <link rel="stylesheet" href="~/css/app.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-shell">
+            <a class="brand" asp-page="/Index">Basic Aspire Starter</a>
+            <a asp-page="/Index">Weather</a>
+        </nav>
+    </header>
+    <main class="page-shell">
+        @RenderBody()
+    </main>
+</body>
+</html>

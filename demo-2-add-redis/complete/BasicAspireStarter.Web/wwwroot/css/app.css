@@ -1,0 +1,112 @@
+:root {
+    --ink: #1f2933;
+    --muted: #5d6b78;
+    --line: #d9e2ec;
+    --panel: #ffffff;
+    --accent: #0f766e;
+    --accent-soft: #d7f7f2;
+    --warning: #8a4b0f;
+    --warning-bg: #fff4d6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: #f5f7fa;
+    font-family: "Aptos", "Segoe UI", sans-serif;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.site-header {
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-shell,
+.page-shell {
+    width: min(960px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.nav-shell {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    min-height: 4rem;
+}
+
+.brand {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.page-shell {
+    padding: 2rem 0 3rem;
+}
+
+.hero {
+    margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 0 0 0.35rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.05;
+    margin: 0 0 0.75rem;
+}
+
+.hero p:not(.eyebrow) {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0;
+    max-width: 44rem;
+}
+
+.notice {
+    background: var(--warning-bg);
+    border: 1px solid #f2d38b;
+    border-radius: 8px;
+    color: var(--warning);
+    padding: 1rem;
+}
+
+.forecast-table {
+    width: 100%;
+    overflow: hidden;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    border-spacing: 0;
+}
+
+.forecast-table th,
+.forecast-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+}
+
+.forecast-table th {
+    background: var(--accent-soft);
+    color: #134e4a;
+    font-size: 0.85rem;
+}
+
+.forecast-table tr + tr td {
+    border-top: 1px solid var(--line);
+}
