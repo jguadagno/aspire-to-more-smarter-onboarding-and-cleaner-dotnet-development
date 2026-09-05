@@ -745,6 +745,3 @@ infrastructure/discovery/*.bicep
 # Squad worktree directories
 .worktree-*/
 .squad/.cache/
-
-### AI
-.junie/
